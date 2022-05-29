@@ -37,6 +37,7 @@ void loop() {
     
     Serial.print("Predicted Class :");
     Serial.println(tf.probaToClass(y_pred));
+    Serial.print(ecg_name[tf.probaToClass(y_pred)]);
     Serial.print("Sanity check:");
     Serial.println(tf.predictClass(x_test_dat));
 }
