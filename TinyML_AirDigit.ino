@@ -10,6 +10,7 @@
 
   
 Eloquent::TinyML::TensorFlow::TensorFlow<N_INPUTS, N_OUTPUTS, TENSOR_ARENA_SIZE> tf;
+String ecg_name[5] = {"正常心跳","早發性心房收縮","早發性心室收縮","室性融合心跳","節律器融合心跳"};
     
 void setup() {  
     Serial.begin(115200);
